@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="adminMain.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h1>DCJ Canteen</h1>
+        <div class="navIcons">
+          <h4>Admin Panel&nbsp; &nbsp;&nbsp; &nbsp;</h4>
+          <a
+            id="logout"
+            href="http://localhost/dcj%20canteen/Admin/adminLogin.php"
+            ><span class="material-icons">logout</span></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <a href="http://localhost/dcj%20canteen/Admin/modify.php"
+          ><div class="Item">
+            <h3>Modify Items</h3>
+          </div></a
+        >
+        <a href="./orderTable.php"
+          ><div class="Item">
+            <h3>Order Table</h3>
+          </div></a
+        >
+        <div class="Item" id="tooltip">
+          <h3>Add New Items</h3>
+          <span class="tooltiptext">In progress</span>
+        </div>
+      </div>
+    </div>
+    <script src="adminMain.js"></script>
+  </body>
+</html>

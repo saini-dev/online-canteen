@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="searchOrder.css" rel="stylesheet" />
+    <title>Search Order</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="navbar">
+        <h2>DCJ Canteen</h2>
+        <div class="navIcons">
+          <a href="http://localhost/dcj%20canteen/User/home.php"
+            ><span class="material-icons">home</span></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="text-container">
+          <p>Track Your Orders</p>
+          <input id="orderId" type="text" placeholder="Enter your order id" />
+          <button>Search</button></br>
+        </div>
+        <div class="order-container">
+          <table>
+            <tr>
+              <th>Order Id</th>
+              <th>Time left</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="searchOrder.js"></script>
+  </body>
+</html>

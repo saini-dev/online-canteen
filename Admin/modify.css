@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", "sans-serif";
+}
+body {
+  background-color: #eeeeee;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #0004ff;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0px 0px 10px 5px #a893e2;
+}
+.navIcons a:nth-child(1) {
+  padding: 0px 25px;
+}
+.content {
+  padding: 30px;
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+#products {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+.productCard {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.productSubtext {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 0.7fr 0.3fr;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.productSubtext > div {
+  display: flex;
+  align-items: center;
+}
+.productSubtext > div > span:nth-child(1) {
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+}
+.productSubtext > div > span:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s transform;
+}
+.productSubtext > div > span:nth-child(2):hover {
+  color: green;
+  transform: scale(1.1);
+}
+.productSubtext > div > span:nth-child(2):active {
+  color: #000000;
+  transform: scale(1);
+}
+.productSubtext > h3 {
+  font-size: 16px;
+}
+h1 {
+  font-size: 28px;
+}
+
+.showbtn {
+  background-color: rgb(43, 235, 68);
+  color: white;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.removebtn {
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}

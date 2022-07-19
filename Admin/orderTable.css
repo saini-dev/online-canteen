@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", "sans-seriff";
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #0004ff;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0px 0px 10px 5px #a893e2;
+}
+.navIcons a:nth-child(1) {
+  padding: 0px 25px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.tabla > .table1 {
+  background-color: aliceblue;
+}
+.table1 {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  width: 700px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px #8888;
+}
+.table1 td {
+  padding: 10px;
+}
+img {
+  width: 40px;
+  height: 40px;
+}
+button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup {
+  border-radius: 10px;
+  height: fit-content;
+  margin-top: 100px;
+  text-align: center;
+  width: 500px;
+}
+.popup > .table2 {
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px #8888;
+}
+.table2 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  width: 100%;
+}
+.orderId {
+  padding: 5px;
+  width: 120px;
+  border: none;
+  font-weight: 500;
+  background-color: #00000000;
+  font-size: 16px;
+}
+.delivered {
+  color: white;
+  background-color: rgb(43, 235, 68);
+}
+.addTime {
+  padding: 2px 4px;
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 980px) {
+  .table1 {
+    width: 500px;
+    margin-top: 150px;
+    font-size: 20px;
+  }
+  .popup {
+    width: 300px;
+    margin-top: 150px;
+  }
+  .table2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup {
+    width: max-content;
+  }
+  .table1 {
+    width: max-content;
+  }
+}
